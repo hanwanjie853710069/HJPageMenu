@@ -62,7 +62,7 @@ class HJBaseVC:
         let cell = UITableViewCell.init(style: .default, reuseIdentifier: "Cell")
         
         cell.textLabel?.text = "\(indexPath.row)"
-        
+
         cell.backgroundColor = UIColor.brown
         
         return cell
@@ -70,7 +70,7 @@ class HJBaseVC:
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100;
+        return 1;
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

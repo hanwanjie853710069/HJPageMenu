@@ -27,7 +27,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
                        headView: self.getHeadView(),
                        vcs: pages,
                        vcTiltes: titles,
-                       animationType: .Type_All)
+                       animationType: .Type_None)
         
         self.addChildViewController(vc)
         
