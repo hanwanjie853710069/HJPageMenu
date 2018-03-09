@@ -101,18 +101,17 @@ UIScrollViewDelegate{
     }()
     
     /// 导航栏
-    private lazy var navView:UIView = {
+    private var navView:UIView? {
         
-        let navV = UIView.init(frame: CGRect(x: 0,
-                                             y: 0,
-                                             width:
-            SCWidth, height: statusBarAndNavigationBarHeight))
+        willSet{
+            
+           guard let value = newValue else { return }
+            
+            self.view.addSubview(value)
+            
+        }
         
-        navV.backgroundColor = UIColor.white.withAlphaComponent(0);
-        
-        return navV
-        
-    }()
+    }
     
     /// 菜单
     private lazy var menuView: HJMenuView = {
@@ -188,11 +187,6 @@ UIScrollViewDelegate{
         
         self.view.addSubview(self.headBottomView)
         
-        self.navView.removeFromSuperview()
-        
-        self.view.addSubview(self.navView)
-        
-        
     }
     
     private func setEdgeInsetHeight(height: CGFloat) {
@@ -218,10 +212,6 @@ UIScrollViewDelegate{
         self.headBottomView.removeFromSuperview()
         
         self.view.addSubview(self.headBottomView)
-        
-        self.navView.removeFromSuperview()
-        
-        self.view.addSubview(self.navView)
         
     }
     
@@ -280,7 +270,9 @@ UIScrollViewDelegate{
         
         self.headBottomView.frame = frame
         
-        self.navView.backgroundColor = UIColor.white.withAlphaComponent(index/64)
+        let color = self.navView?.backgroundColor ?? UIColor.white
+        
+        self.navView?.backgroundColor = color.withAlphaComponent(index/64)
         
         let height = self.headHeight ?? 0
         
@@ -336,11 +328,13 @@ UIScrollViewDelegate{
     /// - Parameters:
     ///   - headHeight: 头部高度
     ///   - headView: 头部视图
+    ///   - navView: 导航栏
     ///   - vcs: 视图控制器数组
     ///   - vcTiltes: 菜单数组
     ///   - animationType: 头部动画
     func setPageMenu(headHeight:CGFloat,
                      headView:UIView,
+                     navView:UIView,
                      vcs:[HJBaseVC],
                      vcTiltes:[String],
                      animationType:animationType = .Type_None) {
@@ -354,6 +348,44 @@ UIScrollViewDelegate{
         self.arrayVC = vcs
         
         self.animationType = animationType
+        
+        self.navView = navView
+        
+    }
+    
+    /// 设置pageMenu属性 （视图控制器数组个数 == 菜单数组个数）
+    ///
+    /// - Parameters:
+    ///   - headHeight: 头部高度
+    ///   - headView: 头部视图
+    ///   - vcs: 视图控制器数组
+    ///   - vcTiltes: 菜单数组
+    ///   - animationType: 头部动画
+    func setPageMenu(headHeight:CGFloat,
+                     headView:UIView,
+                     vcs:[HJBaseVC],
+                     vcTiltes:[String],
+                     animationType:animationType = .Type_None) {
+
+        self.setPageMenu(headHeight: headHeight,
+                         headView: headView,
+                         navView: self.getNavView(),
+                         vcs: vcs,
+                         vcTiltes: vcTiltes
+            ,animationType:animationType)
+        
+    }
+    
+    func getNavView() -> UIView {
+        
+        let navV = UIView.init(frame: CGRect(x: 0,
+                                             y: 0,
+                                             width:
+            SCWidth, height: statusBarAndNavigationBarHeight))
+
+        navV.backgroundColor = UIColor.white.withAlphaComponent(0);
+
+        return navV
         
     }
     

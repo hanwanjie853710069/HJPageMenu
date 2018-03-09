@@ -25,6 +25,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
         
         vc.setPageMenu(headHeight: 200,
                        headView: self.getHeadView(),
+                       navView:self.getNavView(),
                        vcs: pages,
                        vcTiltes: titles,
                        animationType: .Type_None)
@@ -50,6 +51,19 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
         headView.image = #imageLiteral(resourceName: "imageview")
         
         return headView
+        
+    }
+    
+    func getNavView() -> UIView {
+        
+        let navV = UIView.init(frame: CGRect(x: 0,
+                                             y: 0,
+                                             width:
+            SCWidth, height: statusBarAndNavigationBarHeight))
+        
+        navV.backgroundColor = UIColor.green.withAlphaComponent(0);
+        
+        return navV
         
     }
     
