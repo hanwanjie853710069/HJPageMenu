@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class HJCaseVC: HJBaseVC, WKNavigationDelegate{
+class HJCaseVC: HJBaseVC, WKNavigationDelegate,WKUIDelegate{
 
     var cellHeight: CGFloat = 0
     
@@ -21,11 +21,11 @@ class HJCaseVC: HJBaseVC, WKNavigationDelegate{
         
         webView.scrollView.isScrollEnabled = false
         
-        webView.load(URLRequest.init(url: URL.init(string: "https://mp.weixin.qq.com/s/XKisIHQtSZ8JN9WbDmfj2w")!))
+//        webView.load(URLRequest.init(url: URL.init(string: "https://mp.weixin.qq.com/s/XKisIHQtSZ8JN9WbDmfj2w")!))
         
-//        let filePath = Bundle.main.url(forResource: "showNew2", withExtension: "html")
-//
-//        webView.loadFileURL(filePath!, allowingReadAccessTo: Bundle.main.bundleURL)
+        let filePath = Bundle.main.url(forResource: "showNew2", withExtension: "html")
+
+        webView.loadFileURL(filePath!, allowingReadAccessTo: Bundle.main.bundleURL)
         
         return webView
         
