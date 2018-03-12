@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class HJCaseVC: HJBaseVC, WKNavigationDelegate,WKUIDelegate{
+class HJCaseVC: HJBaseVC, WKNavigationDelegate{
 
     var cellHeight: CGFloat = 0
     
@@ -21,11 +21,7 @@ class HJCaseVC: HJBaseVC, WKNavigationDelegate,WKUIDelegate{
         
         webView.scrollView.isScrollEnabled = false
         
-//        webView.load(URLRequest.init(url: URL.init(string: "https://mp.weixin.qq.com/s/XKisIHQtSZ8JN9WbDmfj2w")!))
-        
-        let filePath = Bundle.main.url(forResource: "showNew2", withExtension: "html")
-
-        webView.loadFileURL(filePath!, allowingReadAccessTo: Bundle.main.bundleURL)
+        webView.load(URLRequest.init(url: URL.init(string: "https://mp.weixin.qq.com/s/XKisIHQtSZ8JN9WbDmfj2w")!))
         
         return webView
         
@@ -67,10 +63,6 @@ class HJCaseVC: HJBaseVC, WKNavigationDelegate,WKUIDelegate{
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
         webView.evaluateJavaScript("document.body.offsetHeight") { (any, error) in
-            
-            print(error ?? "没有错误")
-            
-            print(any ?? "没有值")
             
             guard let temp = any else { return }
             
