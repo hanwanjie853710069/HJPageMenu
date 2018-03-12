@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #支持的pod最低版本
   s.ios.deployment_target = '8.0'
   #简介
-  s.summary      = "A short description of HJPageMenu."
+  s.summary      = "A clone of HJPageMenu,Support paging scrolling"
   #项目主页地址
   s.homepage     = "https://github.com/hanwanjie853710069/HJPageMenu"
   #许可证
