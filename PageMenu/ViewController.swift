@@ -12,7 +12,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.navigationController?.delegate = self;
         
         self.view.backgroundColor = UIColor.green;
@@ -48,7 +48,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
         
         let headView = UIImageView(frame: CGRect(x: 0, y: 0, width: SCWidth, height: 200))
         
-        headView.image = #imageLiteral(resourceName: "imageview")
+        headView.image = UIImage.init(named: "HJPageMenuBundle.bundle/imageview.jpg")
         
         return headView
         

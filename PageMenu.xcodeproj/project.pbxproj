@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A55E63420525781004235AF /* HJWKTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A55E63320525781004235AF /* HJWKTableCell.swift */; };
 		6A5ECCDF2050E41900192120 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECCDE2050E41900192120 /* AppDelegate.swift */; };
 		6A5ECCE12050E41900192120 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECCE02050E41900192120 /* ViewController.swift */; };
 		6A5ECCE42050E41900192120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5ECCE22050E41900192120 /* Main.storyboard */; };
@@ -15,13 +14,15 @@
 		6A5ECCE92050E41900192120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5ECCE72050E41900192120 /* LaunchScreen.storyboard */; };
 		6A5ECCF42050E41900192120 /* PageMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECCF32050E41900192120 /* PageMenuTests.swift */; };
 		6A5ECCFF2050E41900192120 /* PageMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECCFE2050E41900192120 /* PageMenuUITests.swift */; };
-		6A5ECD0D2050E77300192120 /* HJPageMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECD0C2050E77300192120 /* HJPageMenuVC.swift */; };
-		6A5ECD0F2050EF1000192120 /* HJCaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECD0E2050EF1000192120 /* HJCaseVC.swift */; };
-		6A5ECD112050FD3200192120 /* HJBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECD102050FD3200192120 /* HJBaseVC.swift */; };
-		6A5ECD132051036800192120 /* HJConstantFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECD122051036800192120 /* HJConstantFile.swift */; };
-		6A5ECD152051141D00192120 /* HJMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECD142051141D00192120 /* HJMenuView.swift */; };
-		6A5ECD1720511F4700192120 /* UIColor+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5ECD1620511F4700192120 /* UIColor+Addition.swift */; };
-		6A8A6365205161B8000DF010 /* HJMenuHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A6364205161B8000DF010 /* HJMenuHeadView.swift */; };
+		6A910CD320564902005215E7 /* HJMenuHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CCB20564902005215E7 /* HJMenuHeadView.swift */; };
+		6A910CD420564902005215E7 /* HJCaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CCC20564902005215E7 /* HJCaseVC.swift */; };
+		6A910CD520564902005215E7 /* HJMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CCD20564902005215E7 /* HJMenuView.swift */; };
+		6A910CD620564902005215E7 /* HJConstantFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CCE20564902005215E7 /* HJConstantFile.swift */; };
+		6A910CD720564902005215E7 /* HJPageMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CCF20564902005215E7 /* HJPageMenuVC.swift */; };
+		6A910CD820564902005215E7 /* HJWKTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CD020564902005215E7 /* HJWKTableCell.swift */; };
+		6A910CD920564902005215E7 /* UIColor+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CD120564902005215E7 /* UIColor+Addition.swift */; };
+		6A910CDA20564902005215E7 /* HJBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CD220564902005215E7 /* HJBaseVC.swift */; };
+		6A910CDC20564A17005215E7 /* HJPageMenuBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6A910CDB20564A17005215E7 /* HJPageMenuBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A55E63320525781004235AF /* HJWKTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJWKTableCell.swift; sourceTree = "<group>"; };
 		6A5ECCDB2050E41900192120 /* PageMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5ECCDE2050E41900192120 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A5ECCE02050E41900192120 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,13 +56,15 @@
 		6A5ECCFA2050E41900192120 /* PageMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5ECCFE2050E41900192120 /* PageMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageMenuUITests.swift; sourceTree = "<group>"; };
 		6A5ECD002050E41900192120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A5ECD0C2050E77300192120 /* HJPageMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJPageMenuVC.swift; sourceTree = "<group>"; };
-		6A5ECD0E2050EF1000192120 /* HJCaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJCaseVC.swift; sourceTree = "<group>"; };
-		6A5ECD102050FD3200192120 /* HJBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJBaseVC.swift; sourceTree = "<group>"; };
-		6A5ECD122051036800192120 /* HJConstantFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJConstantFile.swift; sourceTree = "<group>"; };
-		6A5ECD142051141D00192120 /* HJMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJMenuView.swift; sourceTree = "<group>"; };
-		6A5ECD1620511F4700192120 /* UIColor+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Addition.swift"; sourceTree = "<group>"; };
-		6A8A6364205161B8000DF010 /* HJMenuHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJMenuHeadView.swift; sourceTree = "<group>"; };
+		6A910CCB20564902005215E7 /* HJMenuHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJMenuHeadView.swift; sourceTree = "<group>"; };
+		6A910CCC20564902005215E7 /* HJCaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJCaseVC.swift; sourceTree = "<group>"; };
+		6A910CCD20564902005215E7 /* HJMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJMenuView.swift; sourceTree = "<group>"; };
+		6A910CCE20564902005215E7 /* HJConstantFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJConstantFile.swift; sourceTree = "<group>"; };
+		6A910CCF20564902005215E7 /* HJPageMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJPageMenuVC.swift; sourceTree = "<group>"; };
+		6A910CD020564902005215E7 /* HJWKTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJWKTableCell.swift; sourceTree = "<group>"; };
+		6A910CD120564902005215E7 /* UIColor+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Addition.swift"; sourceTree = "<group>"; };
+		6A910CD220564902005215E7 /* HJBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJBaseVC.swift; sourceTree = "<group>"; };
+		6A910CDB20564A17005215E7 /* HJPageMenuBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HJPageMenuBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,14 +117,7 @@
 			children = (
 				6A5ECCDE2050E41900192120 /* AppDelegate.swift */,
 				6A5ECCE02050E41900192120 /* ViewController.swift */,
-				6A5ECD0C2050E77300192120 /* HJPageMenuVC.swift */,
-				6A5ECD0E2050EF1000192120 /* HJCaseVC.swift */,
-				6A5ECD102050FD3200192120 /* HJBaseVC.swift */,
-				6A5ECD122051036800192120 /* HJConstantFile.swift */,
-				6A5ECD142051141D00192120 /* HJMenuView.swift */,
-				6A8A6364205161B8000DF010 /* HJMenuHeadView.swift */,
-				6A5ECD1620511F4700192120 /* UIColor+Addition.swift */,
-				6A55E63320525781004235AF /* HJWKTableCell.swift */,
+				6A910CCA20564902005215E7 /* PageMenu */,
 				6A5ECCE22050E41900192120 /* Main.storyboard */,
 				6A5ECCE52050E41900192120 /* Assets.xcassets */,
 				6A5ECCE72050E41900192120 /* LaunchScreen.storyboard */,
@@ -147,6 +142,22 @@
 				6A5ECD002050E41900192120 /* Info.plist */,
 			);
 			path = PageMenuUITests;
+			sourceTree = "<group>";
+		};
+		6A910CCA20564902005215E7 /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6A910CCB20564902005215E7 /* HJMenuHeadView.swift */,
+				6A910CCC20564902005215E7 /* HJCaseVC.swift */,
+				6A910CCD20564902005215E7 /* HJMenuView.swift */,
+				6A910CCE20564902005215E7 /* HJConstantFile.swift */,
+				6A910CCF20564902005215E7 /* HJPageMenuVC.swift */,
+				6A910CD020564902005215E7 /* HJWKTableCell.swift */,
+				6A910CD120564902005215E7 /* UIColor+Addition.swift */,
+				6A910CD220564902005215E7 /* HJBaseVC.swift */,
+				6A910CDB20564A17005215E7 /* HJPageMenuBundle.bundle */,
+			);
+			path = PageMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A5ECCE92050E41900192120 /* LaunchScreen.storyboard in Resources */,
+				6A910CDC20564A17005215E7 /* HJPageMenuBundle.bundle in Resources */,
 				6A5ECCE62050E41900192120 /* Assets.xcassets in Resources */,
 				6A5ECCE42050E41900192120 /* Main.storyboard in Resources */,
 			);
@@ -283,16 +295,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A5ECD0F2050EF1000192120 /* HJCaseVC.swift in Sources */,
-				6A8A6365205161B8000DF010 /* HJMenuHeadView.swift in Sources */,
-				6A5ECD0D2050E77300192120 /* HJPageMenuVC.swift in Sources */,
-				6A5ECD152051141D00192120 /* HJMenuView.swift in Sources */,
-				6A5ECD112050FD3200192120 /* HJBaseVC.swift in Sources */,
+				6A910CD420564902005215E7 /* HJCaseVC.swift in Sources */,
+				6A910CD920564902005215E7 /* UIColor+Addition.swift in Sources */,
 				6A5ECCE12050E41900192120 /* ViewController.swift in Sources */,
-				6A5ECD1720511F4700192120 /* UIColor+Addition.swift in Sources */,
+				6A910CD820564902005215E7 /* HJWKTableCell.swift in Sources */,
+				6A910CD320564902005215E7 /* HJMenuHeadView.swift in Sources */,
+				6A910CD520564902005215E7 /* HJMenuView.swift in Sources */,
 				6A5ECCDF2050E41900192120 /* AppDelegate.swift in Sources */,
-				6A55E63420525781004235AF /* HJWKTableCell.swift in Sources */,
-				6A5ECD132051036800192120 /* HJConstantFile.swift in Sources */,
+				6A910CDA20564902005215E7 /* HJBaseVC.swift in Sources */,
+				6A910CD620564902005215E7 /* HJConstantFile.swift in Sources */,
+				6A910CD720564902005215E7 /* HJPageMenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
