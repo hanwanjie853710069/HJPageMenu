@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
   #项目的地址
   s.source       = { :git => "https://github.com/hanwanjie853710069/HJPageMenu.git", :tag => s.version }
   #需要包含的源文件
-  s.source_files  = "HJPageMenu/HJPageMenu/*.{h,m}"
+  s.source_files  = "HJPageMenu/*.{h,m}"
   #资源文件
-  s.resources          = "PageMenu/HJPageMenu/*.{png,bundle,jpg}"
+  s.resources          = "PageMenu/*.{png,bundle,jpg}"
   #是否支持ARC
   s.requires_arc = true
 
