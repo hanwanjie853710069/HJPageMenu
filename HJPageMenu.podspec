@@ -25,6 +25,9 @@ Pod::Spec.new do |s|
   s.resources          = "PageMenu/PageMenu/*.{png,bundle,jpg}"
   #是否支持ARC
   s.requires_arc = true
+  s.pod_target_xcconfig = {
+    'SWIFT_VERSION' => '4.0',
+ }
 
 
 
