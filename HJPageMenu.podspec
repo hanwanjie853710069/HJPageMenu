@@ -1,6 +1,8 @@
 
 Pod::Spec.new do |s|
 
+  --allow-warnings
+
   #名称，pod search 搜索的关键词,注意这里一定要和.podspec的名称一样,否则报错
   s.name         = "HJPageMenu"
   #版本号
@@ -25,7 +27,5 @@ Pod::Spec.new do |s|
   s.resources          = "PageMenu/PageMenu/*.{png,bundle,jpg}"
   #是否支持ARC
   s.requires_arc = true
-
-
 
 end
