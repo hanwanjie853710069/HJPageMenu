@@ -26,7 +26,6 @@ Pod::Spec.new do |s|
   #是否支持ARC
   s.requires_arc = true
 
-  --allow-warnings
 
 
 end
