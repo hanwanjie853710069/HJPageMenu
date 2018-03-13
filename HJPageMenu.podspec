@@ -1,8 +1,6 @@
 
 Pod::Spec.new do |s|
 
-  --allow-warnings
-
   #名称，pod search 搜索的关键词,注意这里一定要和.podspec的名称一样,否则报错
   s.name         = "HJPageMenu"
   #版本号
@@ -10,7 +8,7 @@ Pod::Spec.new do |s|
   #支持的pod最低版本
   s.ios.deployment_target = '9.0'
   #简介
-  s.summary      = "A clone of HJPageMenu,Support paging scrolling"
+  s.summary      = "一个类似微博主页的分页"
   #项目主页地址
   s.homepage     = "https://github.com/hanwanjie853710069/HJPageMenu"
   #许可证
