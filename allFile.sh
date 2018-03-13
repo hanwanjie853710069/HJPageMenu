@@ -4,7 +4,7 @@ git add --all
 
 git commit -m "提交代码"
 
-echo "请选择要提价的分支"
+echo "请选择要提交的分支"
 
 echo "1 - master"
 
@@ -33,4 +33,4 @@ git push --tag
 
 pod spec lint HJPageMenu.podspec --verbose --allow-warnings
 
-pod trunk push HJPageMenu.podspec --verbose
+pod trunk push HJPageMenu.podspec --verbose --allow-warnings
