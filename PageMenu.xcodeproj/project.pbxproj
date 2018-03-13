@@ -23,7 +23,6 @@
 		6A910CD920564902005215E7 /* UIColor+Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CD120564902005215E7 /* UIColor+Addition.swift */; };
 		6A910CDA20564902005215E7 /* HJBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A910CD220564902005215E7 /* HJBaseVC.swift */; };
 		6A910CDC20564A17005215E7 /* HJPageMenuBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6A910CDB20564A17005215E7 /* HJPageMenuBundle.bundle */; };
-		6A910CDE20567F11005215E7 /* showNew2.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A910CDD20567F11005215E7 /* showNew2.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,6 @@
 		6A910CD120564902005215E7 /* UIColor+Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Addition.swift"; sourceTree = "<group>"; };
 		6A910CD220564902005215E7 /* HJBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJBaseVC.swift; sourceTree = "<group>"; };
 		6A910CDB20564A17005215E7 /* HJPageMenuBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HJPageMenuBundle.bundle; sourceTree = "<group>"; };
-		6A910CDD20567F11005215E7 /* showNew2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = showNew2.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +117,7 @@
 			children = (
 				6A5ECCDE2050E41900192120 /* AppDelegate.swift */,
 				6A5ECCE02050E41900192120 /* ViewController.swift */,
+				6A910CCC20564902005215E7 /* HJCaseVC.swift */,
 				6A910CCA20564902005215E7 /* PageMenu */,
 				6A5ECCE22050E41900192120 /* Main.storyboard */,
 				6A5ECCE52050E41900192120 /* Assets.xcassets */,
@@ -150,14 +149,12 @@
 			isa = PBXGroup;
 			children = (
 				6A910CCB20564902005215E7 /* HJMenuHeadView.swift */,
-				6A910CCC20564902005215E7 /* HJCaseVC.swift */,
 				6A910CCD20564902005215E7 /* HJMenuView.swift */,
 				6A910CCE20564902005215E7 /* HJConstantFile.swift */,
 				6A910CCF20564902005215E7 /* HJPageMenuVC.swift */,
 				6A910CD020564902005215E7 /* HJWKTableCell.swift */,
 				6A910CD120564902005215E7 /* UIColor+Addition.swift */,
 				6A910CD220564902005215E7 /* HJBaseVC.swift */,
-				6A910CDD20567F11005215E7 /* showNew2.html */,
 				6A910CDB20564A17005215E7 /* HJPageMenuBundle.bundle */,
 			);
 			path = PageMenu;
@@ -270,7 +267,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A910CDE20567F11005215E7 /* showNew2.html in Resources */,
 				6A5ECCE92050E41900192120 /* LaunchScreen.storyboard in Resources */,
 				6A910CDC20564A17005215E7 /* HJPageMenuBundle.bundle in Resources */,
 				6A5ECCE62050E41900192120 /* Assets.xcassets in Resources */,

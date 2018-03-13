@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HJPageMenuVC:
+public class HJPageMenuVC:
     UIViewController,
     HJBaseVCDelegate,
     HJMenuViewDelegate,
@@ -124,7 +124,7 @@ UIScrollViewDelegate{
     
     private var animationType: animationType = .Type_None
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.addSubview(self.bottomScrollView)
@@ -315,7 +315,7 @@ UIScrollViewDelegate{
         
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
         let page = scrollView.contentOffset.x / SCWidth
         
@@ -332,7 +332,7 @@ UIScrollViewDelegate{
     ///   - vcs: 视图控制器数组
     ///   - vcTiltes: 菜单数组
     ///   - animationType: 头部动画
-    func setPageMenu(headHeight:CGFloat,
+   public func setPageMenu(headHeight:CGFloat,
                      headView:UIView,
                      navView:UIView,
                      vcs:[HJBaseVC],
@@ -361,7 +361,7 @@ UIScrollViewDelegate{
     ///   - vcs: 视图控制器数组
     ///   - vcTiltes: 菜单数组
     ///   - animationType: 头部动画
-    func setPageMenu(headHeight:CGFloat,
+    public func setPageMenu(headHeight:CGFloat,
                      headView:UIView,
                      vcs:[HJBaseVC],
                      vcTiltes:[String],
@@ -394,7 +394,7 @@ UIScrollViewDelegate{
     /// - Type_None: 没有动画
     /// - Type_UpDown: 上下拉伸
     /// - Type_All: 上下左右拉伸
-    enum animationType {
+   public enum animationType {
         case Type_None
         case Type_UpDown
         case Type_All

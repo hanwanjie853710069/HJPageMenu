@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class HJCaseVC: HJBaseVC, WKNavigationDelegate{
+ class HJCaseVC: HJBaseVC, WKNavigationDelegate{
 
     var cellHeight: CGFloat = 0
     
