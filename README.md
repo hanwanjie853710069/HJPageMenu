@@ -3,14 +3,14 @@
 效果图：
 ![gif text](https://github.com/hanwanjie853710069/HJPageMenu/blob/master/pageMenu.gif)
 
-##Installation
+## Installation
 
-From CocoaPods
+#### From CocoaPods
 
-CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like MMNumberKeyboard in your projects. First, add the following line to your Podfile:
+#### CocoaPods is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like MMNumberKeyboard in your projects. First, add the following line to your Podfile:
 
 pod 'HJPageMenu', '~> 1.0.2'
 
-Second, install NSString+DateFormart into your project:
+#### Second, install NSString+DateFormart into your project:
 
 pod install
