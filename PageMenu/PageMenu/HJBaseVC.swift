@@ -14,7 +14,7 @@ protocol HJBaseVCDelegate {
     
 }
 
-public class HJBaseVC:
+open class HJBaseVC:
     UIViewController,
     UITableViewDelegate,
     UITableViewDataSource {
@@ -22,7 +22,7 @@ public class HJBaseVC:
     var delegate : HJBaseVCDelegate?
     
     /// 滚动视图
-    public lazy var tableView: UITableView = {
+    open lazy var tableView: UITableView = {
         
         let tableV = UITableView.init(frame: CGRect(x: 0, y: 0, width: SCWidth, height: SCHeight))
         
@@ -38,7 +38,7 @@ public class HJBaseVC:
         
     }()
     
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.addSubview(self.tableView)
@@ -57,7 +57,7 @@ public class HJBaseVC:
         
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell.init(style: .default, reuseIdentifier: "Cell")
         
@@ -69,15 +69,15 @@ public class HJBaseVC:
         
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1;
     }
     
-    public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.1
     }
     
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         self.delegate?.scrollContentOffset(scrollView: scrollView)
         
