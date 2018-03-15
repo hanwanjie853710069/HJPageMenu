@@ -19,7 +19,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
         
         let pages:[HJBaseVC] = [HJCaseVC(),HJCaseVC(),HJCaseVC()]
         
-        let titles = ["你好","你好世界","世界"]
+        let titles = ["王木木","王木木","王木木"]
         
         let vc = HJPageMenuVC();
         
@@ -28,7 +28,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
                        navView:self.getNavView(),
                        vcs: pages,
                        vcTiltes: titles,
-                       animationType: .Type_None)
+                       animationType:.Type_All)
         
         self.addChildViewController(vc)
         
@@ -47,8 +47,10 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
     func getHeadView() -> UIView {
         
         let headView = UIImageView(frame: CGRect(x: 0, y: 0, width: SCWidth, height: 200))
+
+        headView.isUserInteractionEnabled = true
         
-        headView.image = UIImage.init(named: "HJPageMenuBundle.bundle/imageview.jpg")
+        headView.image = UIImage.init(named: "HJPageMenuBundle.bundle/wangmumu.jpg")
         
         return headView
         
@@ -61,7 +63,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
                                              width:
             SCWidth, height: statusBarAndNavigationBarHeight))
         
-        navV.backgroundColor = UIColor.green.withAlphaComponent(0);
+        navV.backgroundColor = UIColor.orange.withAlphaComponent(0);
         
         return navV
         
@@ -69,4 +71,8 @@ class ViewController: UIViewController,UINavigationControllerDelegate {
     
     
 }
+
+
+
+
 

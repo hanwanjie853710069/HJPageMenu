@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol HJBaseVCDelegate {
+protocol HJBaseVCDelegate: class {
     
     func scrollContentOffset(scrollView: UIScrollView)
     
@@ -19,7 +19,7 @@ open class HJBaseVC:
     UITableViewDelegate,
     UITableViewDataSource {
     
-    var delegate : HJBaseVCDelegate?
+   weak var delegate : HJBaseVCDelegate?
     
     /// 滚动视图
     open lazy var tableView: UITableView = {
@@ -32,7 +32,7 @@ open class HJBaseVC:
         
         tableV.layoutMargins = .zero
         
-        tableV.backgroundColor = UIColor.red
+        tableV.backgroundColor = UIColor.white
         
         return tableV
         
@@ -80,7 +80,7 @@ open class HJBaseVC:
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         self.delegate?.scrollContentOffset(scrollView: scrollView)
-        
+    
     }
     
 }

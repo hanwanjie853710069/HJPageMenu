@@ -225,8 +225,6 @@ UIScrollViewDelegate{
         
         let offsetY = self.headHeight! - statusBarAndNavigationBarHeight
         
-        print(scrollView.contentOffset.y + (self.headHeight ?? 0));
-        
         for (_,element) in arrays.enumerated() {
             
             if scrollView.isEqual(element.tableView) {
@@ -258,7 +256,7 @@ UIScrollViewDelegate{
             
             let height = -(self.headHeight! - statusBarAndNavigationBarHeight)
             
-            let frame = CGRect(x: 0, y: height, width: SCWidth, height: self.headHeight!)
+            let frame = CGRect(x: 0, y: height, width: SCWidth, height: self.headHeight! + menuHeight)
             
             self.headBottomView.frame = frame
             
@@ -274,6 +272,16 @@ UIScrollViewDelegate{
         
         self.navView?.backgroundColor = color.withAlphaComponent(index/64)
         
+        if index < 0 || index == 0 {
+            
+            self.navView?.isUserInteractionEnabled = false
+            
+        }else {
+            
+            self.navView?.isUserInteractionEnabled = true
+            
+        }
+        
         let height = self.headHeight ?? 0
         
         switch self.animationType {
@@ -288,6 +296,7 @@ UIScrollViewDelegate{
                     width = SCWidth
                     
                 }
+                
                 var x = -(-index * SCWidth / height / 2)
                 
                 if x > 0 {
@@ -331,12 +340,14 @@ UIScrollViewDelegate{
     ///   - navView: 导航栏
     ///   - vcs: 视图控制器数组
     ///   - vcTiltes: 菜单数组
+    ///   - touchClass: 头部可点击的类型
     ///   - animationType: 头部动画
    public func setPageMenu(headHeight:CGFloat,
                      headView:UIView,
                      navView:UIView,
                      vcs:[HJBaseVC],
                      vcTiltes:[String],
+                     touchClass:[UIView] = [UIButton()],
                      animationType:animationType = .Type_None) {
         
         self.headHeight = headHeight
@@ -350,6 +361,8 @@ UIScrollViewDelegate{
         self.animationType = animationType
         
         self.navView = navView
+    
+        self.headBottomView.touchArray = touchClass
         
     }
     
@@ -360,19 +373,22 @@ UIScrollViewDelegate{
     ///   - headView: 头部视图
     ///   - vcs: 视图控制器数组
     ///   - vcTiltes: 菜单数组
+    ///   - touchClass: 头部可点击的类型
     ///   - animationType: 头部动画
     public func setPageMenu(headHeight:CGFloat,
                      headView:UIView,
                      vcs:[HJBaseVC],
                      vcTiltes:[String],
+                     touchClass:[UIView] = [UIButton()],
                      animationType:animationType = .Type_None) {
 
         self.setPageMenu(headHeight: headHeight,
                          headView: headView,
                          navView: self.getNavView(),
                          vcs: vcs,
-                         vcTiltes: vcTiltes
-            ,animationType:animationType)
+                         vcTiltes: vcTiltes,
+                        touchClass:touchClass,
+            animationType:animationType)
         
     }
     
@@ -399,6 +415,5 @@ UIScrollViewDelegate{
         case Type_UpDown
         case Type_All
     }
-    
     
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol HJMenuViewDelegate {
+protocol HJMenuViewDelegate:class {
     
     func touchMenuBtn(tag: Int)
     
@@ -16,7 +16,7 @@ protocol HJMenuViewDelegate {
 
 class HJMenuView: UIView {
 
-    var delegate : HJMenuViewDelegate?
+   weak var delegate : HJMenuViewDelegate?
     
     var line: UILabel = {
         

@@ -9,6 +9,8 @@
 import UIKit
 
 class HJMenuHeadView: UIView {
+    
+    var touchArray: [UIView] = [UIButton()]
 
     init() {
         
@@ -37,10 +39,13 @@ class HJMenuHeadView: UIView {
         
         guard let tempView = view else { return nil}
         
-        if tempView.isKind(of: UIButton.classForCoder()) {
+        for touch in self.touchArray {
             
-         
-            return tempView
+            if tempView.isKind(of: touch.classForCoder) {
+                
+                return tempView
+                
+            }
             
         }
         
