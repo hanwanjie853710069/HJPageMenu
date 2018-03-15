@@ -14,3 +14,6 @@ pod 'HJPageMenu', '~> 1.0.2'
 #### Second, install NSString+DateFormart into your project:
 
 pod install
+
+## 联系作者
+https://www.jianshu.com/u/7f3c4198e1bd
